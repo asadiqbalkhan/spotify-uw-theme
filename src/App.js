@@ -5,6 +5,7 @@ import { getTokenFromUrl } from "./spotify";
 import SpotifyWebApi from "spotify-web-api-js";
 import Player from "./Player";
 import { DataLayer, useDataLayerValue } from "./DataLayer";
+// <Todo></Todo>
 const spotify = new SpotifyWebApi();
 
 function App() {
@@ -36,6 +37,13 @@ function App() {
   console.log("🙇", user);
   console.log("👾", token);
   return <div className="app">{token ? <Player /> : <Login />}</div>;
+
+  //  return (
+  //    <div className="app">
+  //      {!token && <Login />}
+  //      {token && <Player spotify={s} />}
+  //    </div>
+  //  );
 }
 
 export default App;
