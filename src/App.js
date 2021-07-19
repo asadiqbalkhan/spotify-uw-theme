@@ -9,7 +9,7 @@ import { DataLayer, useDataLayerValue } from "./DataLayer";
 const spotify = new SpotifyWebApi();
 
 function App() {
-  const [token, setToken] = useState(null);
+  const [token, setToken] = useState();
   const [{ user }, dispatch] = useDataLayerValue();
   // run code based on a given condition
   useEffect(() => {
@@ -38,13 +38,6 @@ function App() {
   console.log("🙇", user);
   console.log("👾", token);
   return <div className="app">{token ? <Player /> : <Login />}</div>;
-
-  //  return (
-  //    <div className="app">
-  //      {!token && <Login />}
-  //      {token && <Player spotify={s} />}
-  //    </div>
-  //  );
 }
 
 export default App;
