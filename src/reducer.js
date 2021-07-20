@@ -4,8 +4,7 @@ export const initialState = {
   playing: false,
   item: null,
   // REMOVE AFTER finish developing..
-  token:
-    "BQAMIuzdqnzUNS_3hIuQCBKxJFn6EH2AOP0G60Bw8CbKdNqVFmq4KA1PYTi0OHl3A2enw4WeBhiezLZUzj_3dK4rn72UKX9tu4yK8lrcoO2NVfwDrCpKSqguTgMlmJJxHolsVoMVYxVVnsAPJkQBQnJaj2RT3pnQS9RJBMonk2AZv6Mt5lzB",
+  token: null,
 };
 
 const reducer = (state, action) => {
@@ -23,6 +22,11 @@ const reducer = (state, action) => {
       return {
         ...state,
         user: action.token,
+      };
+    case "SET_PLAYLISTS":
+      return {
+        ...state,
+        playlists: action.playlists,
       };
     default:
       return state;

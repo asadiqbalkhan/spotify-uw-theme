@@ -1,7 +1,22 @@
+.footer__glow {
+  position: relative;
+  height: 20.5rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.6),
+    black
+  );
+}
+
 .footer {
   position: fixed;
+  display: flex;
+  justify-content: space-between;
+  color: white;
   bottom: 0;
   height: 65px;
-  width: 100%;
+  width: 97%;
+  padding: 20px;
   background-color: #0c0c12;
 }

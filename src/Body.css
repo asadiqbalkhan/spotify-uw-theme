@@ -3,5 +3,46 @@
   background: linear-gradient(rgb(1, 1, 6), rgb(91, 87, 115));
   height: 100vh;
   color: white;
-  padding: 30px;
+}
+
+.footer__glow {
+  top: 220px;
+  height: 5.5rem;
+  width: 100%;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.6),
+    black
+  );
+}
+
+@keyframes footer__glow {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.footer__glow::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 20px;
+  max-width: 100%;
+  padding: 0px 10px;
+  margin: auto;
+  filter: blur(20px);
+  transform: scale(2.3);
+  background: linear-gradient(90deg, #0fffc1, #7e0fff);
+  background-size: 200% 200%;
+  animation: animateglow 4s ease infinite;
 }
