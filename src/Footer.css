@@ -1,4 +1,4 @@
-.footer__glow {
+/* .footer__glow {
   position: relative;
   height: 20.5rem;
   background-image: linear-gradient(
@@ -7,16 +7,48 @@
     rgba(37, 37, 37, 0.6),
     black
   );
-}
+} */
 
 .footer {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  color: white;
   bottom: 0;
   height: 65px;
   width: 97%;
   padding: 20px;
   background-color: #0c0c12;
+}
+
+.footer__left {
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 300px;
+}
+
+.footer__center {
+  flex: 0.4;
+  padding: 0 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+}
+
+.footer__right {
+  flex: 0.3;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__albumLogo {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  object-fit: contain;
 }
