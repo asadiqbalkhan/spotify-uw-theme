@@ -42,7 +42,7 @@ const Footer = () => {
               <VolumeDownIcon />
             </Grid>
             <Grid item xs>
-              <Slider />
+              <Slider className="footer__slider" />
             </Grid>
           </Grid>
         </div>

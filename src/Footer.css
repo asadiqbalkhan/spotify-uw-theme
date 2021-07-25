@@ -51,4 +51,27 @@
   width: 60px;
   margin-right: 20px;
   object-fit: contain;
+  border-radius: 5px;
+}
+
+.footer__green {
+  color: #707174;
+}
+
+.footer__songInfo > h4 {
+  margin-bottom: 5px;
+}
+
+.footer__songInfo {
+  font-size: 12px;
+}
+
+.footer__slider {
+  color: #707174;
+}
+
+.footer__icon:hover,
+.footer__green:hover {
+  transition: transform 0.2s ease-in;
+  transform: scale(1.2) !important;
 }

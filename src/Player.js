@@ -4,17 +4,17 @@ import "./Player.css";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 
-const Player = () => {
+const Player = ({ spotify }) => {
   return (
     <div className="player">
       <div className="player__body">
         <Sidebar />
         {/* Side bar */}
-        <Body />
+        <Body spotify={spotify} />
         {/* Body */}
       </div>
       {/* Footer */}
-      <Footer />s
+      <Footer />
     </div>
   );
 };
