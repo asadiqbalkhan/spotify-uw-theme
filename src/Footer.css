@@ -1,14 +1,3 @@
-/* .footer__glow {
-  position: relative;
-  height: 20.5rem;
-  background-image: linear-gradient(
-    180deg,
-    transparent,
-    rgba(37, 37, 37, 0.6),
-    black
-  );
-} */
-
 .footer {
   position: fixed;
   display: flex;
@@ -17,7 +6,7 @@
   height: 65px;
   width: 97%;
   padding: 20px;
-  background-color: #0c0c12;
+  background-color: #2b0d3a;
 }
 
 .footer__left {
@@ -67,7 +56,7 @@
 }
 
 .footer__slider {
-  color: #707174;
+  color: #707174 !important;
 }
 
 .footer__icon:hover,

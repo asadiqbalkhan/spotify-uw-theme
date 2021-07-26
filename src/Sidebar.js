@@ -11,22 +11,26 @@ const Sidebar = () => {
 
   return (
     <div className="sidebar">
-      <img
-        className="sidebar__logo"
-        src="https://1000logos.net/wp-content/uploads/2017/08/Spotify-symbol.jpg"
-        alt=""
-      />
+      <div className="sidebar__logo">
+        <img
+          className="sidebar__logoImage"
+          src="https://i.im.ge/2021/07/27/DfKMY.png"
+          alt="this is logo"
+        />
+        <p>
+          Spotify for <strong>UltraWorking</strong>
+        </p>
+      </div>
+
       <SidebarOption Icon={HomeIcon} title="Home" />
       <SidebarOption Icon={SearchIcon} title="Search" />
-      <SidebarOption Icon={LibraryMusicIcon} title="Your Library" />
+      <SidebarOption title="Your Library" img />
       <br />
       <strong className="sidebar__title">PLAYLISTS</strong>
       <hr />
 
       {playlists?.items?.map((playlist) => (
         <>
-          <SidebarOption title={playlist.name} />
-          <SidebarOption title={playlist.name} />
           <SidebarOption title={playlist.name} />
         </>
       ))}

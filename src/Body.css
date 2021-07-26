@@ -1,6 +1,6 @@
 .body {
   flex: 0.8;
-  background: linear-gradient(rgb(1, 1, 6), rgb(91, 87, 115));
+  background: linear-gradient(rgb(53, 6, 75), rgba(91, 87, 115, 0.185));
   height: 100vh;
   color: white;
   overflow-y: overlay;

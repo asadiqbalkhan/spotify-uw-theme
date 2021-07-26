@@ -9,7 +9,7 @@
 
 .songRow:hover {
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.507);
+  background-color: #2b0d3a67;
 }
 
 .songRow__info {
@@ -23,7 +23,7 @@
 .songRow__info > p {
   font-size: 14px;
   margin-top: 3px;
-  color: gray;
+  color: #2b0d3a;
 }
 
 .songRow__album {
