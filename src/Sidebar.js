@@ -14,7 +14,7 @@ const Sidebar = () => {
       <div className="sidebar__logo">
         <img
           className="sidebar__logoImage"
-          src="https://i.im.ge/2021/07/27/DfKMY.png"
+          src="/images/spotify.svg"
           alt="this is logo"
         />
         <p>
