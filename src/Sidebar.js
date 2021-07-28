@@ -18,7 +18,7 @@ const Sidebar = () => {
           alt="this is logo"
         />
         <p>
-          Spotify for <strong>UltraWorking</strong>
+          Spotify for <strong>Ultraworking</strong>
         </p>
       </div>
 
